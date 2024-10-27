@@ -1,0 +1,25 @@
+.anime-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.genre-box {
+    margin-right: 5px;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.anime-card {
+    background-color: #222;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(16.66% - 10px);
+    margin-right: 5px;
+}

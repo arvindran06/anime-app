@@ -1,0 +1,20 @@
+.genre-box {
+    display: inline-block;
+    background-color: #826f6f;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.genre-box:hover {
+    background-color: #4b4b4b;
+}
+
+.trailer-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
