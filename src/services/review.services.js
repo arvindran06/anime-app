@@ -3,6 +3,7 @@ import { getCurrentUser } from './auth.service';
 
 const API_URL = 'https://dd8e4809-734b-40cb-982d-1118b6227d42-00-1um0rqp5swgg4.sisko.replit.dev';
 
+
 export const getReviews = async (animeId) => {
     const response = await axios.get(`${API_URL}/api/reviews/${animeId}`);
     return response.data;

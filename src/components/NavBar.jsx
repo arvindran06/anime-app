@@ -1,8 +1,6 @@
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/logo.png';
-import '../components/styling/navbar.css'
-
-
+import '../components/styling/navbar.css';
 
 const MyNavbar = () => {
     return (
@@ -17,24 +15,19 @@ const MyNavbar = () => {
             </Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className="justify-content-between">
+            <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <NavDropdown title={<i className="bi bi-list" style={{ fontSize: '24px' }}></i>} id="basic-nav-dropdown" align="start">
-                        <NavDropdown.Item href="/popular-animes">Popular Animes</NavDropdown.Item>
-                        <NavDropdown.Item href="/anime-movies">Anime Movies</NavDropdown.Item>
-                        <NavDropdown.Item href="/genres">Genres</NavDropdown.Item>
-                    </NavDropdown>
+                    <Nav.Link href="/popular-animes">Popular Animes</Nav.Link>
+                    <Nav.Link href="/anime-movies">Anime Movies</Nav.Link>
+                    <Nav.Link href="/genres">Genres</Nav.Link>
                 </Nav>
                 <Nav>
-
                     <Nav.Link href="/search" className="ml-2">
                         <i className="bi bi-search" style={{ fontSize: '24px' }}></i>
                     </Nav.Link>
-
                     <Nav.Link href="/watchlist" className="ml-2">
                         <i className="bi bi-bookmark" style={{ fontSize: '24px' }}></i>
                     </Nav.Link>
-
                     <Nav.Link href="/profile" className="ml-2">
                         <i className="bi bi-person-circle" style={{ fontSize: '24px' }}></i>
                     </Nav.Link>
